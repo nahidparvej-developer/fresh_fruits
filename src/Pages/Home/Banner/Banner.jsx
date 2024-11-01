@@ -6,27 +6,27 @@ const Banner = () => {
     return (
         <Carousel >
             <div>
-                <img src="/src/assets/home/01.jpg" />
+                <img src="/src/assets/home/banner-1.png" />
                
             </div>
             <div>
-                <img src="/src/assets/home/02.jpg" />
+            <img src="/src/assets/home/banner-1.png" />
            
             </div>
             <div>
-                <img src="/src/assets/home/03.png" />
+            <img src="/src/assets/home/banner-1.png" />
                 
             </div>
             <div>
-                <img src="/src/assets/home/04.jpg" />
+            <img src="/src/assets/home/banner-1.png" />
                 
             </div>
             <div>
-                <img src="/src/assets/home/05.png" />
+            <img src="/src/assets/home/banner-1.png" />
              
             </div>
             <div>
-                <img src="/src/assets/home/06.png" />
+            <img src="/src/assets/home/banner-1.png" />
               
             </div>
         </Carousel>

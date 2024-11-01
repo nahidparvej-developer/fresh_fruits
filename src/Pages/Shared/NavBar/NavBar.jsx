@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
 
     const navOptions = <>
-        <li><Link to='/'>HOME</Link></li>
-        <li><Link to='/menu'>CONTACT us</Link></li>
-        <li><Link to='/menu'>DASHBOARD</Link></li>
+        <li><Link to='/home'>HOME</Link></li>
+        <li><Link to='/'>CONTACT us</Link></li>
+        <li><Link to='/'>DASHBOARD</Link></li>
         <li><Link to='/menu'>OUR MENU</Link></li>
-        <li><Link to='/menu'>OUR SHOP</Link></li>
+        <li><Link to='/order/salad'>ORDER NOW</Link></li>
        
         
     </>
@@ -23,7 +23,7 @@ const NavBar = () => {
                         {navOptions}
                         </ul>
                     </div>
-                    <Link to='/' className="btn btn-ghost text-xl"> <p className="flex-auto text-sm">HEMAYETPUR <p className="text-xs">RESTURANT</p></p></Link>
+                    <Link to='/home' className="btn btn-ghost text-xl"> <p className="flex-auto text-sm">HEMAYETPUR <p className="text-xs">RESTURANT</p></p></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

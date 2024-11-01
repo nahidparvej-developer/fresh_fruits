@@ -2,19 +2,21 @@ import React, { useEffect, useState } from 'react'
 import ScetionTitle from '../../../Componet/ScetionTitle'
 import MenuItem from '../../Shared/MenuItem/MenuItem';
 import { data } from 'autoprefixer';
+import useMenu from '../../../hooks/useMenu';
 
 const PopularMenu = () => {
+ const [menu] =useMenu();
+ const popular = menu.filter(item => item.category === 'popular')
+  // const [menu, setMenu] = useState([]);
+  // useEffect(() => {
+  //   fetch('menu.json')
+  //     .then(res => res.json())
+  //     .then(data => {
+  //       const popularItems = data.filter(item => item.category === 'popular');
+  //       setMenu(popularItems)
+  //     })
 
-  const [menu, setMenu] = useState([]);
-  useEffect(() => {
-    fetch('menu.json')
-      .then(res => res.json())
-      .then(data => {
-        const popularItems = data.filter(item => item.category === 'popular');
-        setMenu(popularItems)
-      })
-
-  }, [])
+  // }, [])
   return (
     <section className='mb-20'>
       <ScetionTitle
@@ -24,7 +26,7 @@ const PopularMenu = () => {
 
       <div className='grid md:grid-cols-2 gap-5 mt-20 '>
         {
-          menu.map(item => <MenuItem
+          popular.map(item => <MenuItem
 
             item={item}
           ></MenuItem>)
