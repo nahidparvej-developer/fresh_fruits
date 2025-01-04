@@ -14,8 +14,8 @@ const FoodeCard = ({item}) => {
                 <div className="card-body">
                     <h2 className="card-title">{name}</h2>
                     <p>{recipe}</p>
-                    <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Add to Cart</button>
+                    <div className="card-actions flex flex-col items-center">
+                        <button className="p-3 rounded-lg hover:text-orange-500 bg-slate-300 border-0 border-b-4 border-b-orange-500 hover:bg-black uppercase">Add to Cart</button>
                     </div>
                 </div>
             </div>
